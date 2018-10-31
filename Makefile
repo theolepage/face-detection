@@ -1,12 +1,12 @@
-CC = gcc
+CC = g++
 BIN = FaceDetection
-SRC = src/*.c src/*/*.c
-CFLAGS = -Wall -Wextra -std=c99
+SRC = src/*.cpp
+CFLAGS = -Wall -Wextra
 
 all: $(BIN)
 
 $(BIN): $(SRC)
-	$(CC) $(SRC) $(CFLAGS) -o $(BIN) -lSDL2 -lSDL2_image -lm
+	$(CC) $(SRC) $(CFLAGS) -o $(BIN)
 
 clean:
 	rm -rf $(BIN)
