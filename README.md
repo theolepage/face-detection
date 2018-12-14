@@ -1,12 +1,18 @@
 # FaceDetection
 
+Simple C++ program to detect human faces in an image.
+Inspired by [this very interesting article](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78).
 
+## Usage
+
+Dependencies: `SDL2` and `SDL2_image`.  
+
+1. Clone this repository with `git clone git@github.com:thdoteo/FaceDetection.git`.
+2. Compile the project by running the command `make` in the project folder.
+3. Execute the program with `./FaceDetection [path]`.
 
 ## To-Do
 
-1. Preprocessing
-2. Compute HoG
-3. Sliding window
-4. Neural Network to recognize HoG of faces
-
-Inspired by [this article](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78).
+1. HOGs normalization
+2. Show a representation of HOGs on GUI
+3. Improve performances and efficiency
