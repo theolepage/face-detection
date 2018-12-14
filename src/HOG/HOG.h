@@ -1,12 +1,11 @@
 #ifndef HOG_H
 #define HOG_H
 
-#include "../Matrix/Matrix.h"
-
 class HOG
 {
 	public:
-		void Extract(Matrix matrix);
+		int y, x;
+		int *data = new int[9]();
 };
 
 #endif
