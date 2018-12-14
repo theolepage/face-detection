@@ -2,6 +2,7 @@
 #include <err.h>
 
 #include "Matrix/Matrix.h"
+#include "HOG/HOG.h"
 #include "Image/Image.h"
 #include "GUI/GUI.h"
 
@@ -14,10 +15,16 @@ int main(int argc, char** argv)
 		errx(1, "Usage: ./FaceDetection [path]");
 	}
 
+	// Load image
 	Image image;
-	GUI gui;
-
 	image.Load(argv[1]);
+
+	// Extract HOG
+	HOG hog;
+	hog.Extract(image.grayscale);
+
+	// Start GUI
+	GUI gui;
 	gui.Start(image.width, image.height);
 	gui.Show(image);
 

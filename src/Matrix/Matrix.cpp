@@ -30,3 +30,12 @@ void Matrix::Print()
 		cout << "\n";
 	}
 }
+
+unsigned char Matrix::GetBlindly(int y, int x)
+{
+	if (y < 0 || y >= lines || x < 0 || x >= columns)
+	{
+		return 0;
+	}
+	return data[y][x];
+}
