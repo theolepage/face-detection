@@ -13,6 +13,7 @@ Dependencies: `SDL2` and `SDL2_image`.
 
 ## To-Do
 
-1. HOGs normalization
-2. Show a representation of HOGs on GUI
-3. Improve performances and efficiency
+1. Show a representation of HOGs on GUI
+2. Improve performances and efficiency
+3. Implement sliding window method
+4. Create the NN and train it to recognize faces

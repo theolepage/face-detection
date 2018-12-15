@@ -2,7 +2,7 @@
 #include <err.h>
 
 #include "Matrix/Matrix.h"
-#include "HOG/HOGExtractor.h"
+#include "HOG/HOG.h"
 #include "Image/Image.h"
 #include "GUI/GUI.h"
 
@@ -22,7 +22,7 @@ int main(int argc, char** argv)
 	// Compute HOG
 	HOGExtractor extractor;
 	extractor.ExtractHOG(image.grayscale);
-	// extractor.Debug();
+	extractor.Debug();
 
 	// Start GUI
 	GUI gui;

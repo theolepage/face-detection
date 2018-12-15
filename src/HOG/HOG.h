@@ -5,7 +5,25 @@ class HOG
 {
 	public:
 		int y, x;
-		int *data = new int[9]();
+		float *data = new float[9]();
+};
+
+class HOGChunk
+{
+	public:
+		int y, x;
+		int currentHistogramId, length;
+		float *data = new float[4 * 9]();
+};
+
+class HOGExtractor
+{
+	public:
+		int numberOfHOG;
+		HOG* listOfHOG;
+		HOGChunk* listOfHOGChunk;
+		void ExtractHOG(Matrix matrix);
+		void Debug();
 };
 
 #endif
