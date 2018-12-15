@@ -1,6 +1,8 @@
 #ifndef HOG_H
 #define HOG_H
 
+#include "../Matrix/Matrix.h"
+
 class HOG
 {
 	public:
@@ -20,6 +22,7 @@ class HOGExtractor
 {
 	public:
 		int numberOfHOG;
+		int numberOfHOGChunk;
 		HOG* listOfHOG;
 		HOGChunk* listOfHOGChunk;
 		void ExtractHOG(Matrix matrix);

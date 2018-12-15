@@ -1,5 +1,7 @@
 # FaceDetection
 
+![Screenshot](https://raw.githubusercontent.com/thdoteo/FaceDetection/master/docs/screenshot.png)  
+
 Simple C++ program to detect human faces in an image.
 Inspired by [this very interesting article](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78).
 
@@ -13,7 +15,8 @@ Dependencies: `SDL2` and `SDL2_image`.
 
 ## To-Do
 
-1. Show a representation of HOGs on GUI
-2. Improve performances and efficiency
-3. Implement sliding window method
-4. Create the NN and train it to recognize faces
+1. Improve the representation of HOGs on GUI
+2. Add webcam as input
+3. Improve performances and efficiency
+4. Implement sliding window method
+5. Create the NN and train it to recognize faces

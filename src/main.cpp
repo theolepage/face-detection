@@ -22,12 +22,12 @@ int main(int argc, char** argv)
 	// Compute HOG
 	HOGExtractor extractor;
 	extractor.ExtractHOG(image.grayscale);
-	extractor.Debug();
+	// extractor.Debug();
 
 	// Start GUI
 	GUI gui;
 	gui.Start(image.width, image.height);
-	gui.Show(image);
+	gui.Show(image, extractor);
 
 	return 0;
 }

@@ -3,6 +3,7 @@
 
 #include <SDL2/SDL.h>
 
+#include "../HOG/HOG.h"
 #include "../Image/Image.h"
 
 class GUI
@@ -11,7 +12,7 @@ class GUI
 	SDL_Renderer* renderer;
 	public:
 		void Start(int width, int height);
-		void Show(Image image);
+		void Show(Image image, HOGExtractor extractor);
 		void Wait();
 };
 

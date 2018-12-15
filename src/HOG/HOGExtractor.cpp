@@ -80,7 +80,7 @@ void HOGExtractor::ExtractHOG(Matrix matrix)
 	int ratio = 2 * chunkSize / cellSize;
 
 	int numberOfHOGChunkCreated = 0;
-	int numberOfHOGChunk = numberOfHOG / ratio;
+	numberOfHOGChunk = numberOfHOG / ratio;
 	listOfHOGChunk = (HOGChunk*)calloc(numberOfHOGChunk, sizeof(HOGChunk));
 
 	for(int i = 0; i < numberOfHOG; i++)
