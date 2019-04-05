@@ -1,6 +1,6 @@
-# FaceDetection
+# face-detection
 
-![Screenshot](https://raw.githubusercontent.com/thdoteo/FaceDetection/master/docs/screenshot.png)  
+![Screenshot](https://raw.githubusercontent.com/thdoteo/face-detection/master/docs/screenshot.png)  
 
 Simple C++ program to detect human faces in an image.
 Inspired by [this very interesting article](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78).
