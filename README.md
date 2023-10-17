@@ -1,6 +1,6 @@
 # face-detection
 
-![Screenshot](https://raw.githubusercontent.com/thdoteo/face-detection/master/docs/screenshot.png)  
+![Screenshot](https://raw.githubusercontent.com/theolepage/face-detection/master/docs/screenshot.png)  
 
 Simple C++ program to detect human faces in an image.
 Inspired by [this very interesting article](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78).
@@ -9,7 +9,7 @@ Inspired by [this very interesting article](https://medium.com/@ageitgey/machine
 
 Dependencies: `SDL2` and `SDL2_image`.  
 
-1. Clone this repository with `git clone git@github.com:thdoteo/FaceDetection.git`.
+1. Clone this repository with `git clone git@github.com:theolepage/FaceDetection.git`.
 2. Compile the project by running the command `make` in the project folder.
 3. Execute the program with `./FaceDetection [path]`.
 
